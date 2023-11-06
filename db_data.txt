@@ -1,0 +1,17 @@
+from members.models import Member
+
+m = Member(firstname = "FirstName", lastname = "LastName")
+m.save()
+
+Member.objects.all().values()
+
+m1 = Member(firstname = "Fatima", lastname = "Ali")
+m2 = Member(firstname = "Aadil", lastname = "Ibrahim")
+m3 = Member(firstname = "Inaya", lastname = "Aalam")
+m4 = Member(firstname = "Umar", lastname = "Khan")
+m5 = Member(firstname = "Mohammad", lastname = "Hamza")
+m = [m1, m2, m3, m4, m5]
+for x in m:
+    x.save()
+
+Member.objects.all().values()

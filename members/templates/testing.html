@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    {% for x in fruits %}
+        {% if x == "Cherry" %}
+            <h1>This fruit is small: {{ x }}</h1>
+        {% elif x == "Elephant Apple" %}
+            <h1>This fruit is big: {{ x }}</h1>
+        {% else %}
+            <h1>{{ x }}</h1>
+        {% endif %}
+    {% endfor %}
+    
+    <!-- <ul>
+        {% for x in fruits %}
+          <li
+            {% if forloop.last %}
+              style='background-color:lightblue;'
+            {% endif %}
+          >{{ x }}</li>
+        {% endfor %}
+    </ul> -->
+      
+    {% comment %}
+        {#% with var1=x var2=x %#}
+    {% endcomment %}
+    {% with var1=x var2=x %}
+        {% if var1 is var2 %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block titlecontent %}All Members Title{% endblock %}
+
+{% block bodycontent %}
+    <a href="/">Home</a>
+    <h1>All Members Data</h1>
+    <ol>
+        {% for x in mymembers %}
+        <li>
+            <a href="details/{{ x.id }}">
+                {{ x.firstname }} {{ x.lastname }}
+            </a>
+        </li>
+        {% endfor %}
+    </ol>
+{% endblock %}
