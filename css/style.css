@@ -1,0 +1,40 @@
+.first_div{
+    background-color: aqua;
+    padding: 3px;
+}
+.building_image{
+    width: 50%;
+    height: 50%;
+}
+.color_content {
+    text-align: center;
+    color: #ffffff;
+    /* background-color: #6351ce;
+    background-color: #6351ce;
+    background-color: #9ee9f9;
+    background-color: #0000ff;
+    background-color: #00004c;
+    background-color: #000033; */
+    background-color: #191947;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.color_content span {
+    display: block;
+    /* font-size: 1.2em; */
+}
+.containers_image{
+    width: 100px;
+    height: 100px;
+}
+/* .arrow{} */
+
+@media (max-width: 768px) {
+    .building_image {
+        width: 100%;
+    }
+    .containers_image{
+        width: 50%;
+    }
+}
